@@ -15,11 +15,11 @@ export default function Listable({ movieData }: { movieData: Results }) {
 
   return (
     <div
-      className="relative grid cursor-pointer"
+      className="relative grid cursor-pointer overflow-hidden rounded shadow-lg"
       onMouseOver={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
     >
-      <div className="relative h-[400px] w-auto sm:h-[400px] rounded overflow-hidden z-0">
+      <div className="relative h-[400px] w-auto sm:h-[400px] overflow-hidden z-0">
         <Image
           className={`transition-all  shadow-md z-0 ${
             hover ? 'scale-110 brightness-[.25]' : ''
